@@ -1,3 +1,5 @@
+
+/* reseat any page or css file in that way*/
 *{
     box-sizing: border-box;
     padding: 0 !important;
@@ -51,6 +53,7 @@ background-color: red;
     background-color: blue;
     transition: all 1s;
 }
+/* make hover and effect anther item inside the parent */
 .my-form>ul>li:hover::before{
     transform:translate(10px);
     width: 100%;
@@ -72,6 +75,19 @@ background-color: red;
 .my-form>ul>li:hover>span{
    
    right: -20px;
+}
+.list-input{
+    content:'asdf';
+    position:relative
+    
+
+}
+.list-input::before{
+    content:'asdf';
+    position:absolute;
+    
+
+
 }
 
 
