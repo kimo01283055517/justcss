@@ -21,3 +21,21 @@ document.querySelector('.btn-click').addEventListener('click',(e)=>{
     ul.appendChild(li);
 })
 
+
+document.querySelector('.name').addEventListener('keyup',(e)=>{
+    let text = e.target.value.toLowerCase();
+    
+     ul.querySelectorAll('li').forEach(x => {
+       if(x.textContent.toLowerCase().indexOf(text) != -1 ){
+       console.log(x.dataset.target)
+        x.style.display= 'block';
+       }else{
+        
+        x.style.display= 'none';
+       }
+       
+       
+     });
+})
+
+
